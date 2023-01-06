@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+html,body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1354px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 1338px;
+		padding: 0 24px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		max-width: 1322px;
+		padding: 0 16px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container {
+		max-width: 1338px;
+		padding: 0 16px;
+	}
+}

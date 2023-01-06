@@ -1,0 +1,20 @@
+.header-contact {	
+	p:nth-of-type(1) {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 150%;
+		color: #0C131D;
+	}
+	
+	p:nth-of-type(2) {
+		font-size: 16px;
+		line-height: 150%;
+		color: #557D8E;
+	}
+
+	&.first-header-contact {
+		p:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+}

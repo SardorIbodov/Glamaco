@@ -1,0 +1,32 @@
+// Reset
+
+@import "./reset/reset";
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:wght@700&display=swap');
+
+// Base
+
+@import "./base";
+
+// Blocks
+
+@import "./blocks/header/header";
+@import "./blocks/header/phone-btn";
+@import "./blocks/transtion-effect";
+@import "./blocks/header/modal";
+@import "./blocks/header/header-contact";
+
+@import "./blocks/main/main";
+@import "./blocks/main/about";
+@import "./blocks/main/company";
+@import "./blocks/main/benefits";
+@import "./blocks/main/brands";
+@import "./blocks/main/catalog";
+@import "./blocks/main/information";
+@import "./blocks/main/news";	
+@import "./blocks/main/career";
+@import "./blocks/main/contacts";
+
+@import "./blocks/footer/footer";

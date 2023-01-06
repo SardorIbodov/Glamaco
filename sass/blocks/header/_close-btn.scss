@@ -1,0 +1,17 @@
+@import "../transtion-effect";
+
+.close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: rgb(247, 249, 250);
+	border-radius: 44px;
+	cursor: pointer;
+	@include transition-effect(background);
+
+	&:hover {
+		background: rgb(227, 227, 227);
+	}
+}

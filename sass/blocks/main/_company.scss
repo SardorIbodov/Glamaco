@@ -1,0 +1,156 @@
+.company {
+	background-color: #fff;
+
+	.company__row {
+		padding: 128px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.company__logo {
+			max-width: 640px;
+			border-right: 1px solid rgb(12, 19, 29, .1);
+			padding-right: 16px;
+
+			img:nth-of-type(1) {
+				width: 100%;
+			}
+
+			img:nth-of-type(2) {
+				width: 0;
+			}
+		}
+
+		.company__info {
+			padding-left: 128px;
+			max-width: 528px;
+			.company__title {
+				margin-bottom: 32px;
+				font-family: 'Source Sans Pro';
+				font-weight: 700;
+				font-size: 40px;
+				line-height: 125%;
+				text-align: justify;
+				color: #0C131D;
+			}
+
+			.company__text {	
+				font-size: 16px;
+				line-height: 165%;
+				color: #0C131D;
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 1024px) {
+	.company {
+	
+		.company__row {
+			padding: 333px 0 128px 0;
+	
+			.company__logo {
+				width: 401px;
+				padding-right: 0;
+
+				img {
+				}
+			}
+	
+			.company__info {
+				padding-left: 64px;
+				max-width: 495px;	
+				.company__title {
+				}
+	
+				.company__text {
+				}
+			}
+		}	
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.company {
+	
+		.company__row {
+			flex-direction: column;
+			padding: 283px 0 128px 0;
+	
+			.company__logo {
+				margin-top: 40px;
+				padding-top: 40px;	
+				order: 2;
+				width: 100%;
+				max-width: 100%;
+				border-top: 1px solid rgb(12, 19, 29, .1);
+				border-right: none;
+	
+				img:nth-of-type(1) {
+					width: 0;
+				}
+	
+				img:nth-of-type(2) {
+					width: 100%;
+				}
+			}
+	
+			.company__info {
+				padding-left: 0;
+				max-width: 100%;
+				.company__title {
+				}
+	
+				.company__text {	
+				}
+			}
+		}	
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.company {
+	
+		.company__row {
+			flex-direction: column;
+			padding: 287px 0 96px 0;
+	
+			.company__logo {
+				margin-top: 32px;
+				padding-top: 32px;	
+			}
+	
+			.company__info {
+				.company__title {
+					font-size: 30px;
+				}
+	
+				.company__text {	
+				}
+			}
+		}	
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.company {
+	
+		.company__row {
+			flex-direction: column;
+			padding: 254px 0 66px 0;
+	
+			.company__logo {
+			}
+	
+			.company__info {
+				.company__title {
+					font-size: 20px;
+				}
+	
+				.company__text {	
+					font-size: 14px;
+				}
+			}
+		}	
+	}
+}

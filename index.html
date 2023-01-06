@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamaco</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./img/header/header__logo.svg" alt="header logo" />
+            </a>
+          </div>
+
+          <div class="header__content">
+            <div class="header-contact first-header-contact">
+              <p>+7 (812) 416-35-70</p>
+              <p>info@glomaco.ru</p>
+            </div>
+
+            <div class="header__phone-btn phone-btn">
+              <span>
+                <img src="./img/header/phone-btn.svg" alt="phone icon" />
+              </span>
+              <span>Связаться с нами</span>
+            </div>
+
+            <div class="header__language">
+              <span class="language">Ru</span>
+              <span class="language">En</span>
+            </div>
+
+            <nav class="navigation">
+              <div class="navigation__content">
+                <div class="navigation__language">
+                  <span>Русский</span>
+                  <span>English</span>
+                </div>
+
+                <div class="navigation__close close">
+                  <img src="./img/modal/close-modal.svg" alt="close modal" />
+                </div>
+
+                <ul class="menu">
+                  <li>
+                    <a href="#about" class="menu__link">Компания ГЛОМАКО</a>
+                  </li>
+                  <li>
+                    <a href="#benefits" class="menu__link"
+                      >Преимущества сотрудничества</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#brands" class="menu__link"
+                      >Продукция под брендами</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#catalog" class="menu__link">Каталог продукции</a>
+                  </li>
+                  <li>
+                    <a href="#about-company" class="menu__link">О компании</a>
+                  </li>
+                  <li>
+                    <a href="#creating" class="menu__link">Производство</a>
+                  </li>
+                  <li>
+                    <a href="#control" class="menu__link">Контроль качества</a>
+                  </li>
+                  <li><a href="#news" class="menu__link">Наши новости</a></li>
+                  <li>
+                    <a href="#career" class="menu__link"
+                      >Успешная карьера в ГЛОМАКО</a
+                    >
+                  </li>
+                  <li><a href="#contacts" class="menu__link">Контакты</a></li>
+                </ul>
+
+                <div class="navigation__contact header-contact">
+                  <p>+7 (812) 416-35-70</p>
+                  <p>info@glomaco.ru</p>
+                </div>
+
+                <div class="navigation__phone-btn phone-btn">
+                  <span>
+                    <img src="./img/header/phone-btn.svg" alt="phone icon" />
+                  </span>
+                  <span>Связаться с нами</span>
+                </div>
+
+                <div class="address">
+                  Ленинградская обл., д. Аннолово, 1-й Индустриальный проезд,
+                  уч. 1
+                </div>
+
+                <div class="navigation__logo">
+                  <a href="#">
+                    <img
+                      src="./img/header/navigation__logo.svg"
+                      alt="navigation logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="modal-header modal-phone-btn">
+              <div class="modal-phone-btn__content">
+                <div class="left-content">
+                  <div class="left-content__text">
+                    Укажите ваши контактные данные, и мы свяжемся с Вами
+                  </div>
+
+                  <div class="left-content__logo">
+                    <a href="#">
+                      <img src="./img/modal/modal-logo.svg" alt="logo" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="right-content">
+                  <form class="content-form">
+                    <div class="form">
+                      <label>
+                        <img src="./img/modal/user.svg" alt="user logo" />
+                        <input type="text" placeholder="Ваше имя" />
+                      </label>
+                    </div>
+                    <div class="form">
+                      <label>
+                        <img src="./img/modal/phone.svg" alt="phone logo" />
+                        <input type="text" placeholder="Телефон" />
+                      </label>
+                    </div>
+                    <div class="form">
+                      <label>
+                        <img src="./img/modal/mail.svg" alt="mail logo" />
+                        <input type="text" placeholder="Email" />
+                      </label>
+                    </div>
+                    <p class="form-text">
+                      * Нажимая «Заказать звонок», вы даёте согласие
+                      на обработку персональных данных
+                    </p>
+                    <input
+                      type="submit"
+                      class="phone-btn submit-btn"
+                      value="Связаться с нами"
+                    />
+                  </form>
+                </div>
+
+                <div class="close-modal close">
+                  <img src="./img/modal/close-modal.svg" alt="close modal" />
+                </div>
+              </div>
+            </div>
+
+            <div class="header__burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__row">
+            <div class="about__card card-about">
+              <h2 class="card-about__title">Контрактное производство</h2>
+              <div class="card-about__text">
+                Любые химические продукты, дезинфицирующие средства и различные
+                продукты бытовой и промышленной химии.
+              </div>
+              <div class="card-about__btns">
+                <span>
+                  <img src="./img/about/to-left.svg" alt="to left"
+                /></span>
+                <span
+                  ><img src="./img/about/to-right.svg" alt="to right"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company" id="company">
+        <div class="container">
+          <div class="company__row">
+            <div class="company__logo">
+              <a href="#">
+                <img src="./img/company/company__logo.svg" alt="company logo" />
+                <img
+                  src="./img/company/company__logo-small.svg"
+                  alt="company__logo-small"
+                />
+              </a>
+            </div>
+            <div class="company__info">
+              <h3 class="company__title">Компания ГЛОМАКО</h3>
+              <p class="company__text">
+                Компания Гломако — это высокотехнологичная производственная
+                компания, предоставляющая услуги контрактного производства
+                дезинфицирующих средств для различных мировых и российских
+                компаний.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <div class="benefits__content">
+            <h2 class="benefits__title">Преимущества сотрудничества</h2>
+            <div class="benefits__cards">
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img1.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Внедрённая система менеджмента качества по стандартам
+                    ISO9001–2015 и ISO 13485–2011
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img2.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Высокотехнологичное производство в соответствии
+                    с европейскими стандартами
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img1.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Опыт реализации контрактного производства и трансфера
+                    технологий с ведущим немецким производителем дезинфицирующих
+                    средств
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img3.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Эффективные процесс производства и контроля качества
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img4.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Гибкая производственная модель, ориентированная на выпуск
+                    любых химических продуктов
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="benefits__card benefits-card">
+                <div class="benefits-card-front">
+                  <img
+                    src="./img/benefits/benefits-card-img1.svg"
+                    alt="card image"
+                    class="benefits-card-front__img"
+                  />
+                  <p class="benefits-card-front__text">
+                    Внедрённая система менеджмента качества по стандартам
+                    ISO9001–2015 и ISO 13485–2011
+                  </p>
+                </div>
+
+                <div class="benefits-card-hover">
+                  <p class="benefits-card-hover__text">
+                    Ответим на любые вопросы! Проконсультируем по продуктам
+                    и контрактному производству.
+                  </p>
+                  <div
+                    class="benefits-card-hover__phone-btn phone-btn phone-btn-white"
+                  >
+                    <span>
+                      <img
+                        src="./img/header/phone-btn-blue.svg"
+                        alt="phone icon"
+                      />
+                    </span>
+                    <span>Связаться с нами</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands" id="brands">
+        <div class="container">
+          <h2 class="brands__title">Продукция под брендами</h2>
+          <div class="brands__row">
+            <div class="brands__logo">
+              <a href="#">
+                <img src="./img/brands/brands__logo.svg" alt="brands logo" />
+              </a>
+            </div>
+            <div class="brands__text">
+              Немецкая компания <span>B|Braun</span> является одним из мировых
+              лидеров в производстве изделий медицинского назначения
+              (оборудование, инструменты, дезинфицирующие средства и пр.)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="catalog__content">
+            <h2 class="catalog__title">Каталог продукции</h2>
+
+            <div class="catalog__cards">
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img1.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Дез-6 для поверхностей и оборудования, 500 мл с распылителем
+                    (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img2.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Гексакварт форте флакон 1000мл. 10 шт. упак.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img3.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Мелисептол Фоам флакон с распылителем 750мл.12 шт. упак.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img4.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Альфа-Вайп, салфетки для дезинфекции в тубах,
+                    120 шт (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img5.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    WIPE, Сменные блоки для дез. салфеток, 120 шт. (Дезодент,
+                    Германия)
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img6.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Альфа-Вайп, салфетки для дезинфекции в тубах,
+                    120 шт (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img1.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Дез-6 для поверхностей и оборудования, 500 мл с распылителем
+                    (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img2.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Гексакварт форте флакон 1000мл. 10 шт. упак.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img3.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Мелисептол Фоам флакон с распылителем 750мл.12 шт. упак.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img4.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Альфа-Вайп, салфетки для дезинфекции в тубах,
+                    120 шт (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img5.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    WIPE, Сменные блоки для дез. салфеток, 120 шт. (Дезодент,
+                    Германия)
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+
+              <div class="catalog__card catalog-card">
+                <div class="catalog-card__img">
+                  <img src="./img/catalog/catalog-img6.jpg" alt="catalog img" />
+                </div>
+                <div class="catalog-card__info">
+                  <p class="catalog-card__text">
+                    Альфа-Вайп, салфетки для дезинфекции в тубах,
+                    120 шт (с отдушкой). Защита от коронавируса.
+                  </p>
+                  <a href="#nowhere" class="catalog-card__link">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-order">
+          <div class="modal-order-content">
+            <h3 class="modal-order__title">Заказ</h3>
+            <form class="modal-order-form">
+              <label class="modal-order-form__element">
+                <img src="./img/modal-order/user (1).svg" alt="user" />
+                <input type="text" placeholder="ФИО" />
+              </label>
+              <div class="modal-order-form__row">
+                <div class="modal-order-form__row-left">
+                  <label class="modal-order-form__element">
+                    <img src="./img/modal-order/phone (1).svg" alt="phone" />
+                    <input type="text" placeholder="Телефон" />
+                  </label>
+                  <label class="modal-order-form__element">
+                    <img src="./img/modal-order/mail (1).svg" alt="email" />
+                    <input type="text" placeholder="Email" />
+                  </label>
+                </div>
+                <div class="modal-order-form__row-right">
+                  <label class="modal-order-form__element">
+                    <img
+                      src="./img/modal-order/message-square.svg"
+                      alt="comment"
+                    />
+                    <textarea placeholder="Комментарий"></textarea>
+                  </label>
+                </div>
+              </div>
+
+              <div class="modal-order-form__bottom">
+                <div class="modal-order-form__text">
+                  * Нажимая «Заказать», вы даёте согласие на обработку
+                  персональных данных
+                </div>
+                <div class="modal-order-form__submit">
+                  <input type="submit" value="Заказать" />
+                </div>
+              </div>
+            </form>
+            <div class="modal-order__close close">
+              <img src="./img/modal/close-modal.svg" alt="close modal" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="information__content">
+          <div class="information__block">
+            <img
+              src="./img/information/information-img1.jpg"
+              alt="about company"
+              class="information__img"
+            />
+          </div>
+          <div class="information__block" id="about-company">
+            <div class="definition">
+              <h3 class="definition__title">О компании</h3>
+              <p class="definition__text">
+                Компания ГЛОМАКО — это высокотехнологичная производственная
+                компания, специализирующаяся на выпуске собственных химических
+                продуктов, а также предоставляющая услуги контрактного
+                производства любых химических продуктов для российских
+                и иностранных компаний.
+              </p>
+              <p class="definition__text">
+                Партнёрство с компанией ГЛОМАКО гарантирует неизменно высокое
+                качества производимой продукции за счёт:
+              </p>
+              <ul class="definition__list">
+                <li>Высококвалифицированного персонала</li>
+                <li>Строгого соблюдения технологического процесса</li>
+                <li>Использования только качественного сырья и материалов</li>
+              </ul>
+            </div>
+          </div>
+          <div class="information__block" id="creating">
+            <div class="definition">
+              <h3 class="definition__title">Производство</h3>
+              <p class="definition__text">
+                Производство расположено в 30 км от Санкт-Петербурга и оснащено
+                современным оборудованием Европейского производства.
+              </p>
+              <p class="definition__text">
+                При проектировании и строительстве производственного комплекса
+                были реализованы принципы планировки фармацевтических
+                предприятий:
+              </p>
+              <ul class="definition__list">
+                <li>Строгая поточность технологического процесса</li>
+                <li>Непрерывное производство</li>
+                <li>Разделения потоков персонала,сырья и готовой продукции</li>
+              </ul>
+            </div>
+          </div>
+          <div class="information__block">
+            <img
+              src="./img/information/information-img2.jpg"
+              alt="about company"
+              class="information__img"
+            />
+          </div>
+          <div class="information__block">
+            <img
+              src="./img/information/information-img3.jpg"
+              alt="about company"
+              class="information__img"
+            />
+          </div>
+          <div class="information__block" id="control">
+            <div class="definition">
+              <h3 class="definition__title">Контроль качества</h3>
+              <p class="definition__text">
+                Надёжная гарантия качества во всех областях и на всех уровнях
+                является определяющей частью нашей корпоративной политики
+                и стратегии. Мы стремимся обеспечить наилучшее качество
+                процессов во всех сферах деятельности нашей компании.
+              </p>
+              <ul class="definition__list">
+                <li>
+                  Обеспечение контроля на всех этапах производства: от закупки
+                  сырья до выпуска готовой продукции
+                </li>
+                <li>
+                  Внедрённые стандарты менеджмента качества согласно
+                  ISO9001–2015 и ISO 13485–2011
+                </li>
+                <li>Сертифицированный персонал</li>
+                <li>
+                  Подтверждённая НИИД эффективность производимых дезинфицирующих
+                  средств против коронавирусной инфекции
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="news">
+        <div class="container">
+          <h2 class="news__title">Наши новости</h2>
+          <div class="news__row">
+            <div class="news__card">
+              <div class="card__top">
+                <img src="./img/news/news__img1.jpg" alt="" />
+                <div class="date">17 июля 2018</div>
+                <div class="card__hover">
+                  <span>Посмотреть</span>
+                  <img src="./img/news/eye.svg" alt="" />
+                </div>
+              </div>
+              <div class="card__bottom">
+                <h3 class="card__title">
+                  «Dezaurum®» — золотой стандарт дезинфекции!
+                </h3>
+                <p class="card__text">
+                  Уважаемые клиенты! Рады вам сообщить, что компания ГЛОМАКО
+                  запустила производство линейки дезинфицирующих…
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <div class="card__top">
+                <img src="./img/news/news__img2.jpg" alt="" />
+                <div class="date">18 июля 2018</div>
+                <div class="card__hover">
+                  <span>Посмотреть</span>
+                  <img src="./img/news/eye.svg" alt="" />
+                </div>
+              </div>
+              <div class="card__bottom">
+                <h3 class="card__title">
+                  Имеется спорная точка зрения, гласящая примерно следующее:
+                  акционеры
+                </h3>
+                <p class="card__text">
+                  Равным образом, убеждённость некоторых оппонентов предполагает
+                  независимые способы реализации позиций, занимаемых участниками
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <div class="card__top">
+                <img src="./img/news/news__img3.jpg" alt="" />
+                <div class="date">15 июля 2018</div>
+                <div class="card__hover">
+                  <span>Посмотреть</span>
+                  <img src="./img/news/eye.svg" alt="" />
+                </div>
+              </div>
+              <div class="card__bottom">
+                <h3 class="card__title">Как уже неоднократно упомянуто</h3>
+                <p class="card__text">
+                  Не следует, однако, забывать, что глубокий уровень погружения
+                  влечёт за собой процесс внедрения и модернизации новых…
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="career" id="career">
+        <div class="container">
+          <div class="career__row">
+            <div class="career__img">
+              <img src="./img/career/career__img.jpg" alt="career image" />
+            </div>
+            <div class="career__information">
+              <h3 class="information__title">Успешная карьера в ГЛОМАКО</h3>
+              <p class="information__text">
+                Компания ГЛОМАКО — это энергичный и дружный коллектив
+                профессионалов, решающий задачи любой сложности, от разработки
+                сложных химических продуктов до локализации и трансфера
+                технологий на производство.
+              </p>
+              <p class="information__text">
+                Наши сотрудники участвуют в крупных российских и международных
+                проектах, получая новые знания и навыки. Мы постоянно
+                инвестируем в развитие человеческого потенциала, как одного
+                из главных конкурентных преимуществ в современном мире.
+              </p>
+              <p class="information__text">
+                Присоединяйтесь к дружному коллективу ГЛОМАКО!
+              </p>
+              <a href="#" class="information__link">
+                <span>Наши вакансии</span>
+                <img src="./img/career/career__icon.svg" alt="career icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__row">
+            <h3 class="contacts__title">Контакты</h3>
+            <div class="contacts__card">
+              <h3 class="card__number">+7 (812) 416-35-70</h3>
+              <ul class="card__list">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/contacts/mail (2).svg"
+                      alt="mail"
+                      class="card__icon"
+                  /></a>
+                  <a href="#">info@glomaco.ru</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/contacts/location.svg"
+                      alt="location"
+                      class="card__icon"
+                  /></a>
+                  <a href="#"
+                    >Ленинградская обл., д. Аннолово, 1-й Индустриальный проезд,
+                    уч. 1</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/contacts/cloud.svg"
+                      alt=""
+                      class="card__icon"
+                  /></a>
+                  <a href="#">Скачать реквизиты</a>
+                </li>
+              </ul>
+              <div class="card__phone-btn phone-btn">
+                <span>
+                  <img src="./img/header/phone-btn.svg" alt="phone icon" />
+                </span>
+                <span>Связаться с нами</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map">
+          <img src="./img/contacts/карта.jpg" alt="map" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logos">
+            <a href="#">
+              <img src="./img/footer/footer__logo1.svg" alt="logo1" />
+            </a>
+            <a href="#">
+              <img src="./img/footer/footer__logo2.svg" alt="logo1" />
+            </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li><a href="#about">Компания ГЛОМАКО</a></li>
+              <li><a href="#benefits">Преимущества сотрудничества</a></li>
+              <li><a href="#brands">Продукция под брендами</a></li>
+              <li><a href="#catalog">Каталог продукции</a></li>
+              <li><a href="#about-company">О компании</a></li>
+            </ul>
+            <ul class="footer__menu">
+              <li><a href="#creating">Производство</a></li>
+              <li><a href="#control">Контроль качества</a></li>
+              <li><a href="#news">Наши новости</a></li>
+              <li><a href="#career">Успешная карьера в ГЛОМАКО</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+						<div class="footer__rights">
+            	<div class="footer__sanitary">
+              	<img src="./img/footer/footer__img.svg" alt="footer image" />
+              	<p>Соблюдение санитарно-гигиенических требований</p>
+            	</div>
+            <div class="footer__info">
+              <p>© 2020 ГЛОМАКО</p>
+              <p>Политика конфиденциальности</p>
+              <p>Соглашение об обработке персональных данных</p>
+              <p>Разработано на «ВЫСОТЕ»</p>
+            </div>
+          </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+@import "../transtion-effect";
+@import "./header-contact";	
+@import "./close-btn";
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	padding: 22px 0 30px 0;
+	background-color: #fff;
+}
+
+.header__row {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	.header__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0 24px;
+
+		.header__language {
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+			.language {
+				padding: 6px 10px;
+				@include transition-effect(color);
+
+				&:nth-of-type(1) {
+					background: #FFFFFF;
+					box-shadow: 0px 0px 10px rgba(0, 66, 114, 0.1);
+					border-radius: 4px 4px 0px 0px;
+					color: #0C131D;
+					
+					&:hover {
+						color: #009FE3;
+					}
+				}
+				&:nth-of-type(2) {
+					background: #F7F9FA;
+					border-radius: 0px 0px 4px 4px;
+					color: #557D8E;
+				
+					&:hover {
+						color: #009FE3;
+					}
+				}
+			}
+		}
+
+		.header__burger-menu {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 56px;
+			height: 56px;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 10px rgba(0, 66, 114, 0.1);
+			border-radius: 4px;
+			transform: matrix(-1, 0, 0, 1, 0, 0);
+			cursor: pointer;
+			@include transition-effect(all);
+
+			&:hover {
+				background-color: #009FE3;
+				box-shadow: 0px 5px 50px rgba(0, 53, 92, 0.05), 0px 24px 32px rgba(0, 53, 92, 0.04), 0px 16px 24px rgba(0, 53, 92, 0.04), 0px 0px 10px rgba(0, 66, 114, 0.1);
+			}
+
+			&:hover span {
+				background-color: #fff;
+			}
+
+			span {
+				display: inline-block;
+				width: 19.5px;
+				height: 2.5px;
+				background: #0C131D;
+				transform: matrix(-1, 0, 0, 1, 0, 0);
+				@include transition-effect(background-color);
+			
+				&:not(:nth-of-type(1)) {
+					margin-top: 6.75px;
+				}
+
+				&:nth-of-type(2) {
+					width: 13.5px;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.navigation {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 100vh;
+			background-color: rgb(0, 0, 0, .5);
+			display: flex;
+			justify-content: flex-end;	
+			@include transition-effect(all);
+			overflow: hidden;
+		
+			.navigation__content {
+				position: relative;
+				z-index: 1;
+				width: 40%;
+				height: 100vh;
+				background-color: #fff;
+				padding: 52px 45px;
+				overflow: auto;
+			}
+		
+			.navigation__language {
+				span {
+					font-size: 13px;
+					line-height: 120%;
+					cursor: pointer;
+					@include transition-effect(color);
+		
+					&:nth-of-type(1) {
+						padding-right: 8px;
+						font-weight: 600;
+						color: #0C131D;
+						border-right: 2px solid #557D8E;
+						&:hover {
+							color: #009FE3;
+						}
+					}
+		
+					&:nth-of-type(2) {
+						padding-left: 8px;
+						color: #557D8E;
+						&:hover {
+							color: #009FE3;
+						}
+					}
+				}
+			}
+		
+			.menu {
+				margin-top: 60px;
+				margin-bottom: 48px;
+				max-width: 334px;
+		
+				li {
+					&:not(:first-of-type) {
+						margin-top: 24px;
+					}
+					a {
+						font-size: 16px;
+						line-height: 150%;
+						color: #0C131D;
+						@include transition-effect(color);
+		
+						&:hover {
+							color: #009FE3;
+						}
+					}
+				}
+			}
+		
+			.navigation__contact {
+				margin-bottom: 24px;
+			}
+		
+			.address {
+				margin: 24px 0 54px 0;
+				max-width: 267px;
+				font-size: 16px;
+				line-height: 150%;
+				color: #0C131D;
+			}
+		
+			.navigation__phone-btn {
+				max-width: 221px;
+			}
+		
+			.navigation__close {
+				position: absolute;
+				top: 40px;
+				right: 48px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.header__row {
+		.header__content {
+			.header__phone-btn {
+				padding: 16px 24px 16px 24px;
+				gap: 0px;
+
+				span:nth-of-type(2) {
+					display: none;
+				}
+			}
+		}
+
+		.navigation {
+			.navigation__content {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header__row {
+		.header__content {
+			.header-contact {
+				display: none;
+			}
+			.header__phone-btn {
+				display: none;
+			}
+			.navigation {
+				.navigation__content {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 20px 0 24px 0;
+	}
+	.header__row {
+		.header__logo {
+			width: 129px;
+			height: 56pxp;
+		}
+		.header__content {	
+			.header__phone-btn {
+				display: none;
+			}
+			.header__language {
+				display: none;
+			}
+			.navigation {
+				.navigation__content {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

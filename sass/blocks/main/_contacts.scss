@@ -1,0 +1,221 @@
+.contacts {
+	padding: 128px 0 0 0;
+	position: relative;
+	height: max-content;
+	.contacts__row {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.contacts__title {
+			font-family: 'Source Sans Pro';
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 125%;
+			color: #0C131D;
+		}
+
+		.contacts__card {
+			max-width: 528px;
+			padding: 64px 84px;
+			background: #FFFFFF;
+			box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
+			border-radius: 4px;
+
+			.card__number {
+				margin-bottom: 32px;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 130%;
+				text-transform: capitalize;
+				color: #0C131D;
+			}
+
+			.card__list {
+				margin-bottom: 40px;
+				display: flex;
+				flex-direction: column;
+				gap: 24px 0;
+
+				li {
+					display: flex;
+					align-items: center;
+					gap: 0 20px;
+					
+					a {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 150%;
+						color: #0C131D;
+					}
+				}
+			}
+
+			.card__phone-btn {
+				max-width: 221px;
+			}
+		}
+	}
+
+	.map {
+		width: 100%;
+		height: 434px;
+		position: absolute;
+		top: calc(132px + 128px);
+		left: 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contacts {
+		padding: 96px 0 0 0;
+		.contacts__row {
+	
+			.contacts__title {
+			}
+	
+			.contacts__card {
+				max-width: 496px;
+				padding: 64px 48px;
+	
+				.card__number {
+				}
+	
+				.card__list {
+					margin-bottom: 40px;
+					display: flex;
+					flex-direction: column;
+					gap: 24px 0;
+	
+					li {
+						
+						a {
+						}
+					}
+				}
+	
+				.card__phone-btn {
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.contacts {
+		padding: 96px 0 0 0;
+		.contacts__row {
+			flex-direction: column;
+			gap: 24px 0;
+			.contacts__title {
+			}
+	
+			.contacts__card {
+				// max-width: 496px;
+				padding: 64px 48px;
+	
+				.card__number {
+				}
+	
+				.card__list {
+					margin-bottom: 40px;
+					display: flex;
+					flex-direction: column;
+					gap: 24px 0;
+	
+					li {
+						
+						a {
+						}
+					}
+				}
+	
+				.card__phone-btn {
+				}
+			}
+		}
+	
+		.map {
+			width: 100%;
+			// height: 512px;
+			position: absolute;
+			top: calc(314px + 128px);
+			left: 0;
+			z-index: -1;
+		
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.contacts {
+		.contacts__row {
+			flex-direction: column;
+			gap: 24px 0;
+			.contacts__title {
+				font-size: 30px;
+			}
+	
+			.contacts__card {
+	
+				.card__number {
+				}
+	
+				.card__list {
+	
+					li {
+						
+						a {
+						}
+					}
+				}
+	
+				.card__phone-btn {
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.contacts {
+		padding: 64px 0 0 0;
+		.contacts__row {
+			flex-direction: column;
+			gap: 24px 0;
+			.contacts__title {
+				font-size: 30px;
+			}
+	
+			.contacts__card {
+				padding: 32px 24px;
+				.card__number {	
+				}
+	
+				.card__list {
+	
+					li {
+						
+						a {
+						}
+					}
+				}
+	
+				.card__phone-btn {
+				}
+			}
+		}
+	}
+}

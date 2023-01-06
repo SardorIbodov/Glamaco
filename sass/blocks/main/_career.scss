@@ -1,0 +1,183 @@
+.career {
+	padding: 144px 0 0 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	
+	.career__information, .career__img {
+		width: calc(50% - 36px);
+	} 
+
+		.career__img {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.career__information {
+			// max-width: 528px;
+
+			.information__title {
+				margin-bottom: 32px;
+				font-family: 'Source Sans Pro';
+				font-weight: 700;
+				font-size: 40px;
+				line-height: 125%;
+				color: #0C131D;
+			}
+
+			.information__text {
+				font-size: 16px;
+				line-height: 165%;
+				color: #0C131D;
+
+				& + .information__text {
+					margin-top: 16px;
+				}
+			}
+
+			.information__link {
+				width: max-content;
+				display: flex;
+				align-items: center;
+				gap: 0 	10px;
+				margin-top: 40px;
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 150%;
+				color: #009FE3;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.career {
+
+	&__row {
+	gap: 40px 32px;
+	.career__information, .career__img {
+		width: 50%;
+	} 
+
+		.career__img {
+			img {
+			}
+		}
+
+		.career__information {
+			.information__title {
+			}
+
+			.information__text {
+
+				& + .information__text {
+				}
+			}
+
+			.information__link {
+			}
+		}
+	}
+}
+}
+
+@media screen and (max-width: 768px) {
+	.career {
+	padding: 112px 0 0 0;
+	&__row {
+	gap: 40px 0;
+	flex-wrap: wrap;
+	.career__information, .career__img {
+		width: 100%;
+	} 
+
+		.career__img {
+			img {
+			}
+		}
+
+		.career__information {
+			.information__title {
+			}
+
+			.information__text {
+
+				& + .information__text {
+				}
+			}
+
+			.information__link {
+			}
+		}
+	}
+}
+}
+
+@media screen and (max-width: 575px) {
+	.career {
+	&__row {
+	gap: 40px 0;
+	flex-wrap: wrap;
+	.career__information, .career__img {
+		width: 100%;
+	} 
+
+		.career__img {
+			img {
+			}
+		}
+
+		.career__information {
+			.information__title {
+				font-size: 30px;
+			}
+
+			.information__text {
+
+				& + .information__text {
+				}
+			}
+
+			.information__link {
+			}
+		}
+	}
+}
+}
+
+@media screen and (max-width: 375px) {
+	.career {
+		padding: 99px 0 0 0;
+	&__row {
+	gap: 32px 0;
+	.career__information, .career__img {
+	} 
+
+		.career__img {
+			img {
+			}
+		}
+
+		.career__information {
+			.information__title {
+				font-size: 20px;
+			}
+
+			.information__text {
+				font-size: 14px;
+				& + .information__text {
+				}
+			}
+
+			.information__link {
+			}
+		}
+	}
+}
+}

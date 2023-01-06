@@ -1,0 +1,127 @@
+.about {
+	background-image: url("../../../img/about/about-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.about__row {
+		padding: 14.5% 0;
+		.card-about {
+			position: relative;
+			max-width: 550px;
+			padding: 64px 56px 32px;
+			background-color: #fff;
+			box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
+			border-radius: 4px;
+
+			&__title {
+				font-family: 'Source Sans Pro';
+				font-weight: 700;
+				font-size: 40px;
+				line-height: 125%;
+				text-align: justify;
+				color: #0C131D;
+			}
+
+			&__text {
+				margin-top: 32px;
+				margin-bottom: 100px;
+				font-size: 16px;
+				line-height: 165%;
+				color: #0C131D;
+			}
+
+			&__btns {
+				display: flex;
+				justify-content: flex-end;
+				gap: 45px;
+
+				span {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about {
+		height: auto;
+		.about__row {
+			padding: 0;
+			.card-about {
+				max-width: 100%;
+				position: relative;
+				top: 244px;
+				padding: 56px 56px 52px 56px;
+	
+				&__text {
+					margin-top: 32px;
+					margin-bottom: 84px;
+					font-size: 16px;
+					line-height: 165%;
+					color: #0C131D;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.about {
+		.about__row {
+			.card-about {
+				max-width: 100%;
+				position: relative;
+				top: 205px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {	
+	.about {
+		.about__row {
+			.card-about {
+				top: 226px;
+				padding: 32px 20px;
+				&__title {
+					font-size: 20px;
+					line-height: 125%;
+				}
+	
+				&__text {
+					font-size: 16px;
+					line-height: 165%;
+					margin-top: 24px;
+					margin-bottom: 50px;
+				}
+			}
+		}	
+	}
+}
+
+	// @media screen and (max-width: 320px) {	
+	// 	.about {
+	// 		.about__row {
+	// 			.card-about {
+	// 				top: 0px;
+	// 				padding: 32px 20px;
+		
+	// 				&__title {
+	// 					font-size: 20px;
+	// 					line-height: 125%;
+	// 					text-align: justify;
+	// 					color: #0C131D;
+	// 				}
+		
+	// 				&__text {
+	// 					font-size: 14px;
+	// 					line-height: 165%;
+	// 					margin-top: 24px;
+	// 					margin-bottom: 77px;
+	// 				}
+	// 			}
+	// 		}	
+	// 	}
+	// }
